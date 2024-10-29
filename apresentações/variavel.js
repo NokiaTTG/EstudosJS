@@ -3,7 +3,7 @@
 //const: variável constante; que sempre irá manter seu valor dentro de um código. Irá ocorrer um erro se uma constante tentar ser alterada.
 //  ex:
 
-    const num1 = 2 //tipo Number: Apenas números; ex: 2; 22.5; 50 = x...
+    const num1 = 2 //tipo Number: Apenas números; ex: 2; 22.5; 1/2...
     const num2 = 4
     
 //let: variável alterável; é possível alterar seu valor dentro do código e pode ser indefinido durante a primeira aparição.

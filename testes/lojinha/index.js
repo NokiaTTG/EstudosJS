@@ -18,8 +18,6 @@ function mostrarProduto() {
     document.getElementById('resultado').innerText = resultado;
 }
 
-
-
 function desconto(){
     const index = parseInt(document.getElementById().value)
     const desc = `${-produtos.produto.preco * index / 100}R$ de desconto!`

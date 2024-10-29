@@ -6,4 +6,3 @@
 // referencia e valores primitivos
 // retorno de condições
 // revisão do 'for'
-// referencia e valor

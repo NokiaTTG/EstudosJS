@@ -21,8 +21,6 @@ saudacao("Thayna!", 18)
 
 //é possível implementar funções uma dentro da outra, fazendo assim códigos mais complexos mesmo usando o metodo "arrowFunction".
 
-
-
 const usuarios = []
 const criaUsuario = (...nomes) => nomes.forEach(nome => usuarios.push(nome))
 criaUsuario("Thayna", "Leonardo", "Medina", "Caio")

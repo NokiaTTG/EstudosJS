@@ -20,3 +20,4 @@ Math.PI() //entrega o valor de pi
 Math.pow(2, 10) // eleva um numero sobre o outro
 
 
+

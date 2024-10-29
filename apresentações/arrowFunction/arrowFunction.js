@@ -1,27 +1,32 @@
-//versão alternativa da 'function' padrão; usada em pequenas linhas de código, pela sua simplicidade
+//Estrutura de uma 'Arrow function'
+(parametro) => expressão 
 
-(parametro) => expressão
 
-//A partir do momento em que o parametro for cumprido, será execudata a função na qual a seta "=>" está indicando. Não é necessário 'return' diferente da 'function' padrão.
-
+//Exemplo:
 const ola = (nome) => console.log(`olá ${nome}`)
 ola("Thayna!")
-ola("Leonardo")
-//retorna: "olá Thayna"
+ola("Leonardo!")
 
-//Quando são duas declarações a serem executadas, o corpo da função deve ser estruturado com chaves "{}"
+//irá retornar "olá Thayna!" e "olá Leonardo!"
 
+//Exemplo:
 const saudacao = (nome, idade) => {
     console.log(`olá ${nome}`)
     console.log(`você tem ${idade} anos de idade`)
 }
 saudacao("Thayna!", 18)
-//retorna: olá Thayna!
-//você tem 18 anos de idade
 
-//é possível implementar funções uma dentro da outra, fazendo assim códigos mais complexos mesmo usando o metodo "arrowFunction".
+//irá retornar "olá Thayna!"
+//"você tem 18 anos de idade"
 
-const usuarios = []
+
+//Exemplo mais complexo:
+const usuarios = [] //Array
+
 const criaUsuario = (...nomes) => nomes.forEach(nome => usuarios.push(nome))
-criaUsuario("Thayna", "Leonardo", "Medina", "Caio")
+//o spread "..." fragmenta o parametro enviado em várias strings, a função faz um .push para cada elemento para dentro do nosso Array. 
+
+criaUsuario("Thayna", "Leonardo", "Medina", "Caio") //execução da função
+
 for (let i = 0; i < usuarios.length; i++) { console.log(usuarios[i]) }
+//'Printa' todos os elementos de usuarios dentro do console.

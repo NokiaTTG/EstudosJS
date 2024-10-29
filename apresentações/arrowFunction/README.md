@@ -24,3 +24,10 @@ const saudacao = (nome, idade) => {
 ~~~
 
 > é possível implementar funções uma dentro da outra, fazendo assim códigos mais complexos mesmo usando o metodo "arrowFunction".
+
+~~~JavaScript
+const usuarios = []
+const criaUsuario = (...nomes) => nomes.forEach(nome => usuarios.push(nome))
+criaUsuario("Thayna", "Leonardo", "Medina", "Caio")
+for (let i = 0; i < usuarios.length; i++) { console.log(usuarios[i]) }
+~~~

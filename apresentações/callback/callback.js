@@ -1,5 +1,3 @@
-//"callback" é passar uma 'function' para outra função como um parametro.
-
 function saudacao(){
     console.log("Olá novamente!")
 }
@@ -11,7 +9,7 @@ function despedida(){
 saudacao();
 despedida();
 
-//no exemplo acima, as duas funções são executadas ao mesmo tempo. No caso da função 'saudacao()' ser executada antes da 'despedida()' é preciso tratar disso.
+
 
 function saudacao1(callback){
     console.log("Olá novamente!")
@@ -24,8 +22,7 @@ function despedida1(){
 
 saudacao1(despedida1)
 
-//como mostrado acima, desta maneira a função 'despedida1' só será executada após a conclusão da 'saudacao1'.
-//ao usar "callback"s garantimos que a próxima função irá ser executada após a primeira.
+
 
 function pergunta(){
     console.log("Já tomou café hoje?")
@@ -38,4 +35,21 @@ function susto(){
 saudacao(pergunta)
 saudacao(susto)
 
-//outros exemplos que funcionariam como "callback"
+
+function acao1(){
+    console.log("Eu")
+    acao2()
+    console.log("você.")
+}
+
+function acao2(){
+    console.log("me")
+    acao3()
+    console.log("amo")
+}
+
+function acao3(){
+    console.log("pergunto\nse")
+}
+
+acao1()
